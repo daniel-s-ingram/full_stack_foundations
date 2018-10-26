@@ -2,7 +2,7 @@ import cgi
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from database_setup import Base, Restaurant, MenuItem
+from db.database_setup import Base, Restaurant, MenuItem
 
 class WebServerHandler(BaseHTTPRequestHandler):
     edit_html = b"""
